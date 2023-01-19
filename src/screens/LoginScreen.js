@@ -26,7 +26,7 @@ const LoginScreen = ({ navigation }) => {
   return (
     <View>
 
-      <Text>Login to view more</Text>
+      <Text style={styles.text} >Login to view more</Text>
 
       <TextInput style={styles.input} placeholder="EMAIL" onChangeText={(text)=>setEmail(text)}/>
       <TextInput style={styles.input} placeholder="PASSWORD" onChangeText={(text)=>setPassword(text)}/>
@@ -76,6 +76,11 @@ const styles = StyleSheet.create({
     color: "yellow",
     fontSize:15,
     padding: 2
+  },
+  text: {
+    fontSize: 25,
+    textAlign: "center",
+    fontWeight: "bold"
   }
 })
 export default LoginScreen
